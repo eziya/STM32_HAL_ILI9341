@@ -29,3 +29,7 @@ https://os.mbed.com/users/dreschpe/code/SPI_TFT_ILI9341/<br>
 8. Modify data type from unsigned short to uint8_t
 9. Add optional bytes (offset, width, height, bpl) to the array !!! IMPORTANT !!!
 10. Add extern declaration to fonts.h file
+
+![pinout](./pinout.jpg)<br>
+
+[![video](https://i9.ytimg.com/vi/dZdysqPwehE/mq2.jpg?sqp=CLCzgekF&rs=AOn4CLAu2cQBW05vL8PRDltMNp3CGXbs9A)](https://youtu.be/dZdysqPwehE)
