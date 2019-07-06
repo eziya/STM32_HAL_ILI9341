@@ -3,13 +3,15 @@ ILI9341 Library for STM32 HAL
 
 Tutorial
 
-Reference
+References
 1. https://github.com/martnak/STM32-ILI9341
 2. https://os.mbed.com/users/dreschpe/code/SPI_TFT_ILI9341/
 3. https://www.mikroe.com/glcd-font-creator
 
 Most of codes are originated from martnak's library.<br>
-I wanted to make it support diverse fonts so I adopted character functions from SPI_TFT_ILI9341 library. <br>
+https://github.com/martnak/STM32-ILI9341
+
+I wanted to make it support diverse fonts so I adopted character functions from SPI_TFT_ILI9341 library.<br>
 As it supports C font array created by GLCD FONT Creator by MikroElektronika.<br>
 https://www.mikroe.com/glcd-font-creator<br>
 
