@@ -1,6 +1,13 @@
 #include "ILI9341_STM32_Driver.h"
 #include "ILI9341_GFX.h"
 
+/* imprecise small delay */
+__STATIC_INLINE void DelayUs(volatile uint32_t us)
+{
+	us *= (SystemCoreClock / 1000000);
+	while (us--);
+}
+
 void ILI9341_DrawHollowCircle(uint16_t X, uint16_t Y, uint16_t radius, uint16_t color)
 {
 	int x = radius-1;
@@ -247,5 +254,8 @@ void ILI9341_DrawImage(const uint8_t* image, uint8_t orientation)
 	{
 		ILI9341_WriteBuffer((uint8_t*)(image + counter), BURST_MAX_SIZE);
 		counter += BURST_MAX_SIZE;
+
+		/* DMA Tx is too fast, It needs some delay */
+		DelayUs(1);
 	}
 }
