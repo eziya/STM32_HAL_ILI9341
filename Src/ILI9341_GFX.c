@@ -181,7 +181,7 @@ void ILI9341_DrawChar(char ch, const uint8_t font[], uint16_t X, uint16_t Y, uin
 	{
 		for (int i=0; i < fWidth; i++)
 		{
-			uint8_t z =  tempChar[fBPL * i + ((j & 0xF8) >> 3) + 1];
+			uint8_t z =  tempChar[fBPL * i + ((j & 0xF8) >> 3) + 1]; /* (j & 0xF8) >> 3, increase one by 8-bits */
 			uint8_t b = 1 << (j & 0x07);
 			if (( z & b ) != 0x00)
 			{
