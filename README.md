@@ -2,6 +2,7 @@
 ILI9341 Library for STM32 HAL
 
 Tutorial
+https://blog.naver.com/eziya76/221579262995
 
 References
 1. https://github.com/martnak/STM32-ILI9341
@@ -12,11 +13,16 @@ Most of codes are originated from martnak's library.<br>
 https://github.com/martnak/STM32-ILI9341
 
 I wanted to make it support diverse fonts so I adopted character functions from SPI_TFT_ILI9341 library.<br>
-As it supports C font array created by GLCD FONT Creator by MikroElektronika.<br>
+As it supports C font array created by GLCD Font Creator by MikroElektronika.<br>
 https://www.mikroe.com/glcd-font-creator<br>
 
 Please refer to the following link to get more details about fonts.<br>
 https://os.mbed.com/users/dreschpe/code/SPI_TFT_ILI9341/<br>
+
+[Modification]
+1. Modified DrawText & DrawChar functions to make them support diverse bitmap fonts.
+2. Rearrange SPI functions
+3. Removed TIM1 related test.
 
 [ How to add new fonts ]
 1. Run GLCD Font Creator
