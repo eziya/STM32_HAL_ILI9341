@@ -26,6 +26,6 @@ https://os.mbed.com/users/dreschpe/code/SPI_TFT_ILI9341/<br>
 5. Click Export for GLCD menu
 6. Select mikroC tab.
 7. Copy generated code to fonts.c file
-8. Modify data type as uint8_t
-9. Add meta info bytes (offset, width, height, bpl) to the array !!! IMPORTANT !!!
+8. Modify data type from unsigned short to uint8_t
+9. Add optional bytes (offset, width, height, bpl) to the array !!! IMPORTANT !!!
 10. Add extern declaration to fonts.h file
